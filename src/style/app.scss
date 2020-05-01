@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(26, 23, 23) !important;
+  color: white;
+}
+
+.tabs-container {
+  padding-bottom: 20px;
+}
+
+.nav-link {
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 11px 0px #4e4d4e;
+  -moz-box-shadow: 0px 0px 11px 0px #4e4d4e;
+  box-shadow: 0px 0px 11px 0px #4e4d4e;
+  border: none !important;
+}
+
+.willWatch {
+  color: white;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  height: 300px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.h6,
+h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #171731;
+}
