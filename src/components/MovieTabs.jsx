@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useContext } from "react";
 import classNames from "classnames/bind";
+import Context from "../context";
+
 import styles from "../style/app.scss";
 
 let cx = classNames.bind(styles);
 
 const MovieTabs = (props) => {
-  const { sort_by, updateSortBy } = props;
+  const { sort_by } = props;
+   const { dispatch } = useContext(Context); 
 
-  const handleClick = (value) => {
-    return () => {
-      updateSortBy(value);
-    }
-  }
+  const updateSortBy = (value) => {
+    dispatch({
+      type: "sort",
+      payload: value,
+    });
+  };
+
+   const handleClick = (value) => {
+     return () => {
+       updateSortBy(value);
+     };
+   };
 
   const className = (value) =>
     cx({

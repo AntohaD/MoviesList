@@ -1,0 +1,17 @@
+.header {
+  box-shadow: 2px 1px 20px 11px #4e4d4e;
+  background-color: #ffffff30;
+}
+
+.navbar-collapse {
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 0 20px;
+  }
+}
+
+.form-control {
+  @media screen and (max-width: 767px) {
+    margin: 0 0 20px;    
+  }
+}
